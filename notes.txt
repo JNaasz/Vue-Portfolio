@@ -1,0 +1,44 @@
+About
+Sample page..?
+
+cool animations
+lots of clickable actions
+
+menu:
+where I live - Detroit 
+where I'm from - The UP
+what I like
+- Gus
+- Running
+- Local Businesses and causes
+- Lake Superior
+
+for fun:
+Coloring Book
+Wood Burning Portfolio
+
+Contact Info
+
+
+Components:
+- menu Component
+- social Component
+- coloring component
+
+
+
+VUE:
+<!-- full syntax -->
+<a v-bind:href="url"> ... </a>
+
+<!-- shorthand -->
+<a :href="url"> ... </a>
+-------------------------------------
+<!-- full syntax -->
+<a v-on:click="doSomething"> ... </a>
+
+<!-- shorthand -->
+<a @click="doSomething"> ... </a>
+
+<!-- shorthand with dynamic argument (2.6.0+) -->
+<a @[event]="doSomething"> ... </a>
