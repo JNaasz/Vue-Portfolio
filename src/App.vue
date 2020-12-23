@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <Menu class="main-menu" navKey="sections"></menu>
+
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,11 +9,26 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Menu from './components/menu.vue';
+import { sections } from './content/index.js';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Menu
+  },
+  methods: {
+    getNavList: function() {
+      console.log('sectionssss', sections);
+      return sections;
+    }
+  },
+  computed: {
+    navList: function () {
+      console.log('sectionssss', sections);
+      return sections;
+    } 
   }
 }
 </script>
