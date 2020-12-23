@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <Menu class="main-menu" navKey="sections"></menu>
+    <Menu class="main-menu" navKey="sections" :active=99></menu>
 
-    <img alt="Vue logo" src="./assets/logo.png">
+    <div id="content"></div>
+
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>

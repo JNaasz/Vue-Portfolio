@@ -35,7 +35,26 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+ computed: {
+        reversedMessage: function () {
+            // `this` points to the vm instance
+            return this.message.split('').reverse().join('');
+        }
+    },
+    methods: {
+        reverseMessage: function () {
+            return this.message.split('').reverse().join('');
+        }
+    },
+    beforeCreate: function() {}, //1
+    created: function() {}, //2
+    beforeMount: function() {}, //4
+    mounted: function() {}, //5
+    beforeUpdate: function() {}, //6
+    updated: function() {}, //7
+    beforeDestroy: function() {}, //8
+    destroyed: function() {} //9
 }
 </script>
 

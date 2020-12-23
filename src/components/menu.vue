@@ -18,16 +18,17 @@ const navMap = {
 export default {
   name: 'Menu',
   props: {
-    navKey: String
+    navKey: String,
+    active: Number
   },
   data: function() {
       return {
-          navList: [],
-          active: 0
+          navList: []
       }
   },
   created: function() {
       this.navList = navMap[this.navKey];
+      this.active = this.active || 0;
   },    
   methods: {
         selectMenu(event) {
