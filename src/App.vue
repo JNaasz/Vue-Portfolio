@@ -11,7 +11,7 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Menu from './components/menu.vue';
-import { sections } from './content/index.js';
+// import { sections } from './content/index.js';
 
 export default {
   name: 'App',
@@ -21,14 +21,16 @@ export default {
   },
   methods: {
     getNavList: function() {
-      console.log('sectionssss', sections);
-      return sections;
+      // console.log('sectionssss', sections);
+      // return sections;
+      return '';
     }
   },
   computed: {
     navList: function () {
-      console.log('sectionssss', sections);
-      return sections;
+      // console.log('sectionssss', sections);
+      // return sections;
+      return '';
     } 
   }
 }

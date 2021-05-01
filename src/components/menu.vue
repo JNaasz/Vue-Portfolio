@@ -9,10 +9,11 @@
 </template>
 
 <script>
-import { sections } from '../content/index.js';
-
+// import { sections } from '../content/index.js';
+import * as data from '../content/sectionMap.json';
+console.log('log this', data.default.Wedding);
 const navMap = {
-    sections
+    sections: data.default.Wedding
 }
 
 export default {
